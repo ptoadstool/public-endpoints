@@ -1,15 +1,20 @@
-# Tesla Fleet Public Key
+# Public Endpoints
 
-This repository hosts the public key required by the Tesla Fleet API for Project Hearth.
+This repository hosts the small set of public-facing static resources required by Project Hearth.
 
 ## Purpose
 
-Tesla requires a publicly accessible HTTPS endpoint that serves a PEM-encoded public key.
+Some third-party services require publicly accessible HTTPS resources for verification, trust establishment, or application configuration.
 
-This repository intentionally contains **only** that public artifact.
+This repository intentionally contains only those public artifacts.
 
-No secrets, credentials, or private infrastructure are stored here.
+It never contains secrets, credentials, private keys, or internal infrastructure.
 
-## Architecture
+## Future Endpoints
 
-This repository exists solely to publish the Tesla Fleet public key.
+Examples include:
+
+- Domain verification files
+- Additional `.well-known` resources
+- Public certificates
+- Vendor verification tokens
